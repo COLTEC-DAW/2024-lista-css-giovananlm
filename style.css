@@ -185,9 +185,7 @@ footer a{
 
 /*Estilo para celulares*/
 @media screen and (max-width: 768px){
-    body{
-        width: 100%;
-    }
+
     header{
         display: inline-block;
         position: relative;
@@ -206,26 +204,18 @@ footer a{
     .explanation{
         border: none;
     }
-    .participation{
-        display: flex;
-        flex-wrap: wrap;
-        border-top: 2px solid rgb(156, 89, 209);
-    }
     
-    .participation h3{
-        flex-basis: 100%;
-        align-self: center;
-        font-size: 35px;
-    }
-    
-    .participation p{
+    .participation *{
         flex-basis: 100%;
     }
+    
 }
 
 @media print{
     *{
         font-family: 'Times New Roman', Times, serif;
+    }
+    .banner{
         background-color: white;
     }
 }
