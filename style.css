@@ -1,0 +1,221 @@
+body{
+    max-width: 1280px;
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+* {
+    background-color: rgb(0,0,0);
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+abbr{
+    font-family: small-caps;
+    color:rgb(245, 238, 175);
+}
+p{
+    text-align: center;
+    text-indent: 1em;
+    color: white;
+}
+h1{
+    text-align: center;
+    position:relative;
+    display: inline-block;
+    font-size: 1.8rem;
+    color: rgb(156, 89, 209);
+    left: 1em;
+    right: 1em;
+}
+h2{
+    text-align: center;
+    display: inline-block;
+    margin-left: 45px;
+    font-size: 1.4rem;
+    color: rgb(213, 188, 231);
+}
+h3{
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(213, 188, 231);
+}
+
+a{
+    color: rgb(252, 244, 52);
+    font-weight: 900;
+    background-color: rgba(175, 162, 162, 0);
+}
+
+a:visited{
+    font-weight: normal;
+}
+
+a:hover{
+    color:rgb(255, 217, 0);
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align:center;
+}
+header{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+footer{
+    margin: 4%;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+footer a{
+    border: 2px solid;
+    padding: 0.5em;
+    width: 120px;
+    text-align: center;
+    margin: 0.5em;
+}
+
+.page-wrapper{
+    position: relative;
+}
+.summary{
+    text-align: center;
+}
+.main p{
+    line-height: 1.5;
+}
+
+.explanation p:first-of-type:first-letter{
+    font-size: 48px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    float: left;
+}
+.intro{
+    height: 550px;
+}
+.explanation{
+    width: 60%;
+    margin-right: 35%;
+    border-right: 2px solid #1f295c;
+    padding-right: 2%;
+}
+.sidebar{
+    position:absolute;
+    left: 62%;
+    padding-left: 2%;
+    padding-right: 2%;
+    top: 370px;
+    background-color: rgba(0, 0 , 0, 0);
+}
+
+.design-selection h3{
+    background-color: rgba(157, 89, 209, 0.63);
+    padding-bottom:11px;
+    margin-bottom:0px;
+}
+
+.design-selection li{
+    border-top: 2px solid rgb(156, 89, 209);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: rgba(157, 89, 209, 0.63);
+}
+
+.design-selection li:last-child{
+    border-bottom: 2px solid rgb(156, 89, 209);
+    padding-bottom: 5px;
+    
+}
+
+.participation{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid rgb(156, 89, 209);
+}
+
+.participation h3{
+    flex-basis: 50%;
+    align-self: center;
+    font-size: 35px;
+}
+
+.participation p{
+    flex-basis: 50%;
+}
+
+.benefits{
+    display: flex;
+    align-items: center;
+    border-top: 2px solid rgb(156, 89, 209);
+    border-bottom: 2px solid rgb(156, 89, 209);
+}
+
+.benefits h3{
+    flex: 3;
+    text-align: right;
+    order: 1;
+    background-color: rgba(255, 217, 0, 0);
+    font-size: 35px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:rgb(167, 129, 196);
+    -webkit-text-fill-color:rgb(252, 244, 52);
+}
+
+.benefits p{
+    flex: 7;
+    background-color: rgba(255, 217, 0, 0);
+}
+
+#design-archives{
+    display: none;
+}
+
+/*Estilo para celulares*/
+@media screen and (max-width: 768px){
+
+    header{
+        display: inline-block;
+        position: relative;
+        left: 50%;
+    }
+    p{
+        text-align: left;
+        text-indent: 0;
+        color: white;
+    }
+    .sidebar{
+        display: center;
+        background-color: rgba(0, 0 , 0, 0);
+        position:static;
+    }
+    .explanation{
+        border: none;
+    }
+    
+    .participation *{
+        flex-basis: 100%;
+    }
+    
+}
+
+@media print{
+    *{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .banner{
+        background-color: white;
+    }
+}
