@@ -182,3 +182,50 @@ footer a{
 #design-archives{
     display: none;
 }
+
+/*Estilo para celulares*/
+@media screen and (max-width: 768px){
+    body{
+        width: 100%;
+    }
+    header{
+        display: inline-block;
+        position: relative;
+        left: 50%;
+    }
+    p{
+        text-align: left;
+        text-indent: 0;
+        color: white;
+    }
+    .sidebar{
+        display: center;
+        background-color: rgba(0, 0 , 0, 0);
+        position:static;
+    }
+    .explanation{
+        border: none;
+    }
+    .participation{
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 2px solid rgb(156, 89, 209);
+    }
+    
+    .participation h3{
+        flex-basis: 100%;
+        align-self: center;
+        font-size: 35px;
+    }
+    
+    .participation p{
+        flex-basis: 100%;
+    }
+}
+
+@media print{
+    *{
+        font-family: 'Times New Roman', Times, serif;
+        background-color: white;
+    }
+}
